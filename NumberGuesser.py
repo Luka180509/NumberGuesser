@@ -75,7 +75,10 @@ if Max_Num > 2:
     
     for junk in range(3):
             print('')
-    print(f'Your picked number is {Guessed_Num}')
+    if Guessed_Num == Max_Num or Guessed_Num < Max_Num:
+        print(f'Your picked number is {Guessed_Num}')
+    else:
+        print(f'there is no such a number between 0 and {Max_Num}')
 else:
     #if maximum number was not above 2 give you a warn message
     print('i said above 2!')
